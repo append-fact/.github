@@ -1,12 +1,13 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/append-fact/.github/main/assets/banner2.png" width="100%" />
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/append-fact/.github/main/assets/logo.png" width="110" />
-</p>
-
 <h1 align="center" style="font-weight:600;">Append Factory</h1>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/append-fact/.github/main/assets/banner.png" width="100%" />
+</p>
+
+<!-- <p align="center">
+  <img src="https://raw.githubusercontent.com/append-fact/.github/main/assets/logo.png" width="110" />
+</p> -->
+
 
 <p align="center" style="max-width:520px; margin:auto; line-height:1.5;">
   Software Factory enfocada en crear plataformas modulares, escalables y de alto rendimiento.<br/>
