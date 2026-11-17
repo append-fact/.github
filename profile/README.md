@@ -20,7 +20,7 @@ with the precision critical work demands.
 
 <br/>
 
-[About](#-about) · [Capabilities](#-capabilities) · [How we work](#-how-we-work) · [Products](#-products) · [Tech stack](#-tech-stack) · [Contact](#-lets-talk)
+[About](#-about) · [Capabilities](#-capabilities) · [How we work](#-how-we-work) · [Products](#-products) · [Open source](#-open-source) · [Tech stack](#-tech-stack) · [Contact](#-lets-talk)
 
 </div>
 
@@ -156,6 +156,40 @@ One standard at every layer. One engineering standard and a way of working you c
 | **Auraplay** | Records matches automatically and delivers the video to every player. Any sport that can be filmed. | ![In operation](https://img.shields.io/badge/in%20operation-22c55e?style=flat-square) |
 | **CRUX** | Passive sensing to protect critical infrastructure. | ![In development](https://img.shields.io/badge/in%20development-3b82f6?style=flat-square) |
 | **Foundar** | Crowdfunding to drive young entrepreneurship in Latin America. | ![In development](https://img.shields.io/badge/in%20development-3b82f6?style=flat-square) |
+
+<br/>
+
+## ◆ Open source
+
+### Gradus
+
+**An outer-loop orchestration framework for coding agents.**
+Gradus separates the authority to implement from the authority to accept.
+
+![Open source](https://img.shields.io/badge/open%20source-coming%20soon-050834?style=flat-square)
+![Version](https://img.shields.io/badge/version-0.3.2-3b82f6?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white)
+![Dependencies](https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square)
+![Runners](https://img.shields.io/badge/runners-pytest%20·%20dotnet%20test-512BD4?style=flat-square)
+
+Coding agents already write useful code. What they can't reliably do is decide whether that code is finished. Gradus moves that decision out of the agent:
+
+> A coding agent can build whatever it wants, but whether the work is done is decided by tests a person approved before the work started, run by deterministic code the agent cannot influence.
+
+The harness (today, Claude Code) runs the agent's inner loop. Gradus runs the loop around it: which phase comes next, which role works, with which tools, whether the work really passed its gate, and when to stop and call a person.
+
+| | |
+| --- | --- |
+| 🧾 **Approved before building** | A person writes the intent; a verifier turns it into tests that must fail with nothing built. The person approves them, and their fingerprints are recorded. |
+| 🔒 **Hermetic gate** | The orchestrator runs the approved tests with its own configuration and judges every approved test by ID. The project's config, plugins and stray files don't reach it. |
+| ⚓ **Trust anchor** | Approvals, config, intent, roles and rules are held in memory and checked after every agent call. Any change stops the run. |
+| 🧑‍🔧 **Five roles, least privilege** | Planner, verifier, builder, reviewer and scribe, each with its own tools and write scope, verified in code. |
+| 🚪 **Fail closed** | When Gradus can't know, it takes the safe branch: the gate fails, the run escalates, cost is charged at the cap. |
+| 🧬 **Measured, not assumed** | Mutation testing scores each gate, and results are reported with Wilson intervals instead of bare percentages. |
+
+**Status.** Early and under active development. The current release closes the known paths for changing what gets judged; a sealed protection level, .NET at parity with Python and measured evidence from real runs are next on the roadmap. Known gaps are published, not hidden.
+
+*Gradus* is Latin for "step": you don't climb to the next one without standing on the last.
 
 <br/>
 
