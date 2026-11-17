@@ -1,5 +1,5 @@
 <a href="https://append.com.ar/en">
-  <img src="https://raw.githubusercontent.com/append-fact/.github/main/assets/append-banner.png" width="100%" alt="Append — Semper ascendens" />
+  <img src="https://raw.githubusercontent.com/append-fact/.github/main/assets/append-x-portada.png" width="100%" alt="Append — Semper ascendens" />
 </a>
 
 <div align="center">
